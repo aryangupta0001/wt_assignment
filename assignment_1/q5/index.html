@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <title>
+            Feedback Form
+        </title>
+
+        <style>
+            span{
+                display: inline-block;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+        </style>
+
+        <script>
+            handleClear = () => {
+                document.getElementById("FeedbackForm").reset();
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <form id="FeedbackForm">
+            
+            <h1>
+                Feedback Form
+            </h1>
+
+            Please fill out this form to help us improve our site.
+            <br>
+
+            <span>
+                Name :
+            </span>
+            <input type="text" name="name" id="nameInput">
+            <br>
+            
+            <span>
+                Comments :
+            </span>
+            <br>
+            <textarea name="comment" id="commentInput" rows="10"></textarea>
+            <br>
+            
+            <span>
+                E-mail Address :
+            </span>
+            <input type="text" name="email" id="emailInput">
+            <br>
+            
+            <span>
+                Things you liked :
+            </span>
+            <br>
+            
+            <input type="checkbox" name="likes" id="cb1" value="Design">
+            <label for="cb1">Site Design</label>
+            
+            <input type="checkbox" name="likes" id="cb2" value="Links">
+            <label for="cb2">Links</label>
+            
+            <input type="checkbox" name="likes" id="cb3" value="Ease">
+            <label for="cb3">Ease Of Use</label>
+            
+            <input type="checkbox" name="likes" id="cb4" value="Images">
+            <label for="cb4">Images</label>
+            
+            <input type="checkbox" name="likes" id="cb5" value="Source">
+            <label for="cb5">Source Code</label>
+            <br>
+            
+            <span>
+                How did you get to our site ?:
+            </span>
+            
+            <br>
+            
+            <input type="radio" id="r1" name="get2site" value="Search Engine">
+            <label for="r1">Search Engine</label>
+            <input type="radio" id="r2" name="get2site" value="Links from another site">
+            <label for="r2">Links from another site</label>
+            <input type="radio" id="r3" name="get2site" value="Reference in a book">
+            <label for="r3">Reference in a book</label>
+            <input type="radio" id="r4" name="get2site" value="Other">
+            <label for="r4">Other</label>
+            
+            <br>
+            
+            <span>
+                Rate our site :
+            </span>     
+            
+            <select name="Rating" id="Rating">
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </select>
+            
+            <br><br>
+            <button>Submit</button>
+            <button onclick="handleClear">Clear</button>
+        </form>
+        
+    </body>
+    </html>
