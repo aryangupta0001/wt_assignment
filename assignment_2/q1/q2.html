@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Welcome Message</title>
+
+    <script defer>
+        function welcomeMessage() {
+            const name = document.getElementById("name").value;
+            if (name.length < 3) {
+                alert("Name can not be less than 3 characters long");
+            }
+            else {
+                const a = document.createElement("h1");
+                a.innerHTML = `Welcome to the site ${name}`;
+                document.body.appendChild(a);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>What is your Name</h1>
+    <input type="text" name="name" id="name">
+    <button onclick="welcomeMessage()">Submit</button>
+</body>
+
+</html>
