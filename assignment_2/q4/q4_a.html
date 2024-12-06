@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove characters</title>
+
+    <script>
+        const str = prompt("Enter the string");
+        const pos = parseInt(prompt("Enter the position to remove characters from : "), 10);
+        const n = parseInt(prompt("Enter the no. of characters to be removed : "), 10);
+
+        const newStr = str.slice(0, pos - 1) + str.slice(pos + n - 1);
+
+        alert(`New String is : ${newStr}`);
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

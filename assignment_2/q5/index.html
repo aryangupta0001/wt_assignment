@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+
+    <script>
+        function collectInfo() {
+            const petName = document.getElementById("petName").value;
+            const petType = document.getElementById("petType").value;
+            const radio = document.getElementsByName("pedigreed")[0];
+            const pedigreed = document.forms[0].pedigreed.value;
+
+            alert(`Pet Name : ${petName}\nPet Type : ${petType}\nPedigreed : ${pedigreed}`)
+        }
+    </script>
+</head>
+
+<body>
+
+    <form>
+        <span>
+            Pet Name :
+        </span>
+        <input type="text" name="petName" id="petName">
+
+        <br>
+
+        <label for="petType">Pet Type : </label>
+        <select name="petType" id="petType">
+            <option value="Dog">Dog</option>
+            <option value="Bird">Bird</option>
+            <option value="Cat">Cat</option>
+        </select>
+
+        <br>
+
+        <span>Pedigreed : </span>
+
+        <input type="radio" id="pediYes" , name="pedigreed" value="Yes" checked="checked">
+        <label for="pediYes">Yes</label>
+
+        <input type="radio" id="pediNo" , name="pedigreed" value="No">
+        <label for="pediNo">No</label>
+        <br>
+        <button onclick="collectInfo()">Submit</button>
+    </form>
+</body>
+
+</html>
